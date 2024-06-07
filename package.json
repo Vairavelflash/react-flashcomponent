@@ -1,0 +1,52 @@
+{
+  "name": "react-flashcomponent",
+  "version": "0.0.1",
+  "main": "src/index.tsx",
+  "description": "",
+  "git repository": "",
+  "author": "vairavel",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "react"
+  ],"private": false,
+  "dependencies": {
+
+    "@types/react": "^18.2.61",
+    "@types/react-dom": "^18.2.19",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "^5.0.1",
+    "typescript": "^4.9.5"
+  },
+  "scripts": {
+    "build": "babel src -d dist",
+    "prepublishOnly": "npm run build"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.24.0",
+    "@babel/cli": "^7.23.9",
+    "@babel/preset-react": "^7.23.3",
+    "autoprefixer": "^10.2.5"
+  }
+}
