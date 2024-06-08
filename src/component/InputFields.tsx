@@ -1,7 +1,8 @@
-import React, { Fragment, Ref, useEffect, useRef, useState } from "react";
+
 import "./input.css";
 import "./common.css";
 import { ExpandMoreIcon } from "../assets/icons";
+import React, { Fragment, Ref, useEffect, useRef, useState } from "react";
 
 interface InputCheckboxProps {
   name: string;

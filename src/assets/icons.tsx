@@ -1,3 +1,5 @@
+import React from "react";
+
 export const ExpandMoreIcon: React.FC = () => {
   return (
     <svg
