@@ -1,6 +1,6 @@
 {
   "name": "react-flashcomponent",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "src/index.tsx",
   "description": "",
   "git repository": "",
@@ -22,8 +22,8 @@
     "typescript": "^4.9.5"
   },
   "scripts": {
-    "build": "babel src -d dist",
-    "prepublishOnly": "npm run build"
+  "build": "babel src --extensions \".ts,.tsx\" -d dist",
+  "prepublishOnly": "npm run build"
   },
   "eslintConfig": {
     "extends": [
