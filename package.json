@@ -1,6 +1,6 @@
 {
   "name": "react-flashcomponent",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "main": "dist/index.js",
   "description": "",
   "git repository": "",
@@ -11,9 +11,9 @@
   ],
   "keywords": [
     "react"
-  ],"private": false,
+  ],
+  "private": false,
   "dependencies": {
-
     "@types/react": "^18.2.61",
     "@types/react-dom": "^18.2.19",
     "react": "^18.2.0",
@@ -22,8 +22,8 @@
     "typescript": "^4.9.5"
   },
   "scripts": {
-  "build": "babel src --extensions \".ts,.tsx\" -d dist",
-  "prepublishOnly": "npm run build"
+    "build": "babel src --extensions \".ts,.tsx\" -d dist && copyfiles -u 1 \"src/**/*.css\" dist",
+    "prepublishOnly": "npm run build"
   },
   "eslintConfig": {
     "extends": [
@@ -44,9 +44,12 @@
     ]
   },
   "devDependencies": {
-    "@babel/preset-env": "^7.24.0",
     "@babel/cli": "^7.23.9",
+    "@babel/preset-env": "^7.24.0",
     "@babel/preset-react": "^7.23.3",
-    "autoprefixer": "^10.2.5"
+    "@babel/preset-typescript": "^7.24.7",
+    "autoprefixer": "^10.2.5",
+    "babel-plugin-transform-inline-environment-variables": "^0.4.4",
+    "copyfiles": "^2.4.1"
   }
 }
